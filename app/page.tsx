@@ -63,6 +63,144 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      {/* REAL-TIME FACTORY STOCK SECTION */}
+      <section className="bg-background p-12 gap-12">
+        <div className="max-w-4xl mx-auto space-y-12">
+          <div className="border-2 border-foreground rounded-none p-8">
+            <h3 className="text-3xl font-bold uppercase tracking-widest text-foreground mb-8">
+              Real-Time Factory Stock
+            </h3>
+
+            {/* Stock Grid */}
+            <div className="space-y-8">
+              {/* Beras - 80% */}
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <span className="text-lg font-semibold uppercase tracking-wide text-foreground">
+                    Beras
+                  </span>
+                  <span className="text-lg font-semibold uppercase tracking-wide text-foreground">
+                    80%
+                  </span>
+                </div>
+                <div className="border-2 border-foreground rounded-none bg-background p-1">
+                  <div
+                    className="h-6 bg-accent transition-all"
+                    style={{ width: '80%' }}
+                  ></div>
+                </div>
+              </div>
+
+              {/* Cabai Merah - 30% */}
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <span className="text-lg font-semibold uppercase tracking-wide text-foreground">
+                    Cabai Merah
+                  </span>
+                  <span className="text-lg font-semibold uppercase tracking-wide text-foreground">
+                    30%
+                  </span>
+                </div>
+                <div className="border-2 border-foreground rounded-none bg-background p-1">
+                  <div
+                    className="h-6 bg-destructive transition-all"
+                    style={{ width: '30%' }}
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PRICE & 7-DAY PREDICTION SECTION */}
+      <section className="bg-background p-12 gap-12">
+        <div className="max-w-4xl mx-auto space-y-12">
+          <div className="border-2 border-foreground rounded-none p-8">
+            <h3 className="text-3xl font-bold uppercase tracking-widest text-foreground mb-8">
+              Price & 7-Day Prediction
+            </h3>
+
+            {/* SVG Chart */}
+            <div className="border-2 border-foreground rounded-none bg-background p-8">
+              <svg
+                viewBox="0 0 600 300"
+                className="w-full h-auto"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                {/* Grid lines */}
+                <line x1="50" y1="250" x2="550" y2="250" stroke="#1c1917" strokeWidth="2" />
+                <line x1="50" y1="50" x2="50" y2="250" stroke="#1c1917" strokeWidth="2" />
+
+                {/* Y-axis labels */}
+                <text x="20" y="260" fontSize="12" fill="#1c1917" fontFamily="monospace" fontWeight="bold">
+                  0K
+                </text>
+                <text x="15" y="160" fontSize="12" fill="#1c1917" fontFamily="monospace" fontWeight="bold">
+                  50K
+                </text>
+                <text x="10" y="60" fontSize="12" fill="#1c1917" fontFamily="monospace" fontWeight="bold">
+                  100K
+                </text>
+
+                {/* X-axis labels */}
+                <text x="50" y="280" fontSize="12" fill="#1c1917" fontFamily="monospace" fontWeight="bold">
+                  D1
+                </text>
+                <text x="150" y="280" fontSize="12" fill="#1c1917" fontFamily="monospace" fontWeight="bold">
+                  D2
+                </text>
+                <text x="250" y="280" fontSize="12" fill="#1c1917" fontFamily="monospace" fontWeight="bold">
+                  D3
+                </text>
+                <text x="350" y="280" fontSize="12" fill="#1c1917" fontFamily="monospace" fontWeight="bold">
+                  D4
+                </text>
+                <text x="450" y="280" fontSize="12" fill="#1c1917" fontFamily="monospace" fontWeight="bold">
+                  D5
+                </text>
+                <text x="540" y="280" fontSize="12" fill="#1c1917" fontFamily="monospace" fontWeight="bold">
+                  D6
+                </text>
+
+                {/* Moving average zigzag line (ascending) */}
+                <polyline
+                  points="50,220 100,200 150,180 200,160 250,140 300,130 350,120 400,100 450,90 500,70 550,50"
+                  fill="none"
+                  stroke="#4d7c0f"
+                  strokeWidth="3"
+                  strokeLinecap="square"
+                  strokeLinejoin="miter"
+                />
+
+                {/* Data points */}
+                <circle cx="50" cy="220" r="4" fill="#4d7c0f" stroke="#1c1917" strokeWidth="2" />
+                <circle cx="100" cy="200" r="4" fill="#4d7c0f" stroke="#1c1917" strokeWidth="2" />
+                <circle cx="150" cy="180" r="4" fill="#4d7c0f" stroke="#1c1917" strokeWidth="2" />
+                <circle cx="200" cy="160" r="4" fill="#4d7c0f" stroke="#1c1917" strokeWidth="2" />
+                <circle cx="250" cy="140" r="4" fill="#4d7c0f" stroke="#1c1917" strokeWidth="2" />
+                <circle cx="300" cy="130" r="4" fill="#4d7c0f" stroke="#1c1917" strokeWidth="2" />
+                <circle cx="350" cy="120" r="4" fill="#4d7c0f" stroke="#1c1917" strokeWidth="2" />
+                <circle cx="400" cy="100" r="4" fill="#4d7c0f" stroke="#1c1917" strokeWidth="2" />
+                <circle cx="450" cy="90" r="4" fill="#4d7c0f" stroke="#1c1917" strokeWidth="2" />
+                <circle cx="500" cy="70" r="4" fill="#4d7c0f" stroke="#1c1917" strokeWidth="2" />
+                <circle cx="550" cy="50" r="4" fill="#4d7c0f" stroke="#1c1917" strokeWidth="2" />
+              </svg>
+            </div>
+
+            {/* Legend */}
+            <div className="mt-8 flex items-center gap-4">
+              <div className="flex items-center gap-2">
+                <div className="w-4 h-4 bg-accent rounded-none"></div>
+                <span className="text-sm font-semibold uppercase tracking-wide text-foreground">
+                  7-Day Moving Average
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

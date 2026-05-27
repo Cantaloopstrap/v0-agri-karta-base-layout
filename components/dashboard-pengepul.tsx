@@ -147,6 +147,42 @@ export default function DashboardPengepul() {
                 </button>
               </div>
             </div>
+
+            {/* Warning Box for Phantom Booking */}
+            <div className="border-b-2 border-[#991B1B] bg-[#d97059] text-white p-6">
+              <p className="text-sm font-bold tracking-widest uppercase">
+                PENGIRIMAN DIKUNCI S.D 23:59 KARENA PEMBATALAN OTOMATIS
+              </p>
+            </div>
+
+            {/* Row 3: Bawang Merah (Phantom Booking Sanctions) */}
+            <div className="grid grid-cols-5 divide-x-2 divide-foreground">
+              <div className="p-6 flex flex-col justify-center border-r-2 border-foreground">
+                <p className="text-base font-bold text-foreground">
+                  Bawang Merah
+                </p>
+              </div>
+              <div className="p-6 flex flex-col justify-center border-r-2 border-foreground">
+                <p className="text-base font-bold text-foreground">
+                  300kg
+                </p>
+              </div>
+              <div className="p-6 flex flex-col justify-center border-r-2 border-foreground">
+                <p className="text-base font-bold text-foreground">
+                  0kg
+                </p>
+              </div>
+              <div className="p-6 flex flex-col justify-center border-r-2 border-foreground">
+                <p className="text-base font-bold text-accent">
+                  300kg
+                </p>
+              </div>
+              <div className="p-6 flex flex-col justify-center">
+                <button disabled className="border-2 border-muted-foreground bg-muted-foreground text-muted-foreground px-6 py-3 font-mono text-sm font-bold cursor-not-allowed opacity-60">
+                  RESTOCK
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

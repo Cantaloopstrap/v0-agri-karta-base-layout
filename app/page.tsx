@@ -201,6 +201,69 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      {/* LIVE LOGISTICS FEED SECTION */}
+      <section className="bg-background p-12 gap-12">
+        <div className="max-w-4xl mx-auto space-y-12">
+          <div className="border-2 border-foreground rounded-none p-8">
+            <h3 className="text-3xl font-bold uppercase tracking-widest text-foreground mb-8">
+              Live Logistics Feed
+            </h3>
+
+            {/* Feed List */}
+            <div className="divide-y-2 divide-foreground">
+              {/* Item 1 */}
+              <div className="py-6">
+                <p className="text-base font-medium uppercase tracking-wide text-foreground">
+                  14:02 - Pengepul Zona 3 mengirimkan 250kg Beras
+                </p>
+              </div>
+
+              {/* Item 2 */}
+              <div className="py-6">
+                <p className="text-base font-medium uppercase tracking-wide text-foreground">
+                  13:45 - Pengepul Zona 1 mengirimkan 50kg Jagung
+                </p>
+              </div>
+
+              {/* Item 3 */}
+              <div className="py-6">
+                <p className="text-base font-medium uppercase tracking-wide text-foreground">
+                  13:12 - Pengepul Zona 2 mengirimkan 180kg Cabai Merah
+                </p>
+              </div>
+
+              {/* Item 4 */}
+              <div className="py-6">
+                <p className="text-base font-medium uppercase tracking-wide text-foreground">
+                  12:38 - Pengepul Zona 4 mengirimkan 320kg Padi
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* B2B COLLABORATION SECTION */}
+      <section className="bg-background p-12 gap-12">
+        <div className="max-w-4xl mx-auto space-y-12">
+          <div className="border-2 border-foreground rounded-none bg-foreground p-12">
+            <h3 className="text-3xl font-bold uppercase tracking-widest text-background mb-6">
+              B2B Collaboration
+            </h3>
+
+            <p className="text-lg font-semibold uppercase tracking-wide text-background mb-8">
+              Pusat Logistik Jawa
+            </p>
+
+            <button
+              className="px-8 py-4 bg-accent text-foreground font-bold uppercase tracking-wide text-sm rounded-sm hover:bg-background hover:text-accent hover:border-2 hover:border-foreground transition-colors border-none"
+            >
+              Hubungi Kolaborasi Kemitraan
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

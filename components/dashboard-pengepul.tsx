@@ -49,6 +49,106 @@ export default function DashboardPengepul() {
             </div>
           </div>
         </div>
+
+        {/* Widget Sisa Kebutuhan (Demand) */}
+        <div className="border-2 border-foreground bg-background">
+          {/* Header */}
+          <div className="border-b-2 border-foreground p-6">
+            <h2 className="text-2xl font-bold tracking-wider text-foreground">
+              WIDGET SISA KEBUTUHAN (DEMAND)
+            </h2>
+          </div>
+
+          {/* Grid Table */}
+          <div className="divide-y-2 divide-foreground">
+            {/* Header Row */}
+            <div className="grid grid-cols-5 divide-x-2 divide-foreground">
+              <div className="p-6 border-r-2 border-foreground">
+                <p className="text-xs font-bold tracking-widest text-muted-foreground uppercase">
+                  Produk
+                </p>
+              </div>
+              <div className="p-6 border-r-2 border-foreground">
+                <p className="text-xs font-bold tracking-widest text-muted-foreground uppercase">
+                  Target
+                </p>
+              </div>
+              <div className="p-6 border-r-2 border-foreground">
+                <p className="text-xs font-bold tracking-widest text-muted-foreground uppercase">
+                  OTW
+                </p>
+              </div>
+              <div className="p-6 border-r-2 border-foreground">
+                <p className="text-xs font-bold tracking-widest text-muted-foreground uppercase">
+                  Sisa Kuota
+                </p>
+              </div>
+              <div className="p-6">
+                <p className="text-xs font-bold tracking-widest text-muted-foreground uppercase">
+                  Aksi
+                </p>
+              </div>
+            </div>
+
+            {/* Row 1: Cabai Merah */}
+            <div className="grid grid-cols-5 divide-x-2 divide-foreground">
+              <div className="p-6 flex flex-col justify-center border-r-2 border-foreground">
+                <p className="text-base font-bold text-foreground">
+                  Cabai Merah
+                </p>
+              </div>
+              <div className="p-6 flex flex-col justify-center border-r-2 border-foreground">
+                <p className="text-base font-bold text-foreground">
+                  500kg
+                </p>
+              </div>
+              <div className="p-6 flex flex-col justify-center border-r-2 border-foreground">
+                <p className="text-base font-bold text-foreground">
+                  380kg
+                </p>
+              </div>
+              <div className="p-6 flex flex-col justify-center border-r-2 border-foreground">
+                <p className="text-base font-bold text-accent">
+                  120kg
+                </p>
+              </div>
+              <div className="p-6 flex flex-col justify-center">
+                <button className="border-2 border-accent bg-accent text-accent-foreground px-6 py-3 font-mono text-sm font-bold hover:bg-background hover:text-accent transition-colors">
+                  RESTOCK
+                </button>
+              </div>
+            </div>
+
+            {/* Row 2: Jagung Manis */}
+            <div className="grid grid-cols-5 divide-x-2 divide-foreground">
+              <div className="p-6 flex flex-col justify-center border-r-2 border-foreground">
+                <p className="text-base font-bold text-foreground">
+                  Jagung Manis
+                </p>
+              </div>
+              <div className="p-6 flex flex-col justify-center border-r-2 border-foreground">
+                <p className="text-base font-bold text-foreground">
+                  1000kg
+                </p>
+              </div>
+              <div className="p-6 flex flex-col justify-center border-r-2 border-foreground">
+                <p className="text-base font-bold text-foreground">
+                  200kg
+                </p>
+              </div>
+              <div className="p-6 flex flex-col justify-center border-r-2 border-foreground">
+                <p className="text-base font-bold text-accent">
+                  800kg
+                </p>
+              </div>
+              <div className="p-6 flex flex-col justify-center">
+                <button className="border-2 border-accent bg-accent text-accent-foreground px-6 py-3 font-mono text-sm font-bold hover:bg-background hover:text-accent transition-colors">
+                  RESTOCK
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   )

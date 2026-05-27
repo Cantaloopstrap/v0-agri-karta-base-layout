@@ -1,5 +1,5 @@
-import RegistrasiPengepul from '@/components/registrasi-pengepul'
+import DashboardPengepul from '@/components/dashboard-pengepul'
 
 export default function Page() {
-  return <RegistrasiPengepul />
+  return <DashboardPengepul />
 }
